@@ -1,0 +1,117 @@
+[
+  {
+    "topic": "The Street Sweeper",
+    "status": "uploaded",
+    "videoId": "qoA89FJN3C4"
+  },
+  {
+    "topic": "Flossing teeth for kids",
+    "status": "rejected",
+    "reason": "The content provides specific dental hygiene instructions, which constitutes medical advice, a category restricted by the safety guidelines."
+  },
+  {
+    "topic": "Sharing a garden harvest",
+    "status": "uploaded",
+    "videoId": "ock8nmTnagc"
+  },
+  {
+    "topic": "The Diplodocus long neck reach",
+    "status": "rejected",
+    "reason": "The script uses the name 'Dippy the Diplodocus,' which directly references 'Dippy,' the famous and iconic cast of the Diplodocus skeleton exhibited at the Natural History Museum in London, constituting a specific existing copyrighted character/brand entity."
+  },
+  {
+    "topic": "Sea Otter Pups",
+    "status": "uploaded",
+    "videoId": "CooTDp_8nQ0"
+  },
+  {
+    "topic": "Saturn's Rings",
+    "status": "rejected",
+    "reason": "The script includes a call to action ('Follow for a new fun fact every day!') which promotes social media engagement, violating the 'no commercial/promotional' constraint for child-safety content."
+  },
+  {
+    "topic": "The slide trombone",
+    "status": "rejected",
+    "reason": "The script contains a call to action asking users to 'Follow for a new fun fact every day!', which is a commercial engagement tactic aimed at social media growth, violating the 'no commercial' rule."
+  },
+  {
+    "topic": "The Ukulele",
+    "status": "rejected",
+    "reason": "The script contains a call to action asking the viewer to 'Follow for a new fun fact every day,' which constitutes a commercial-like request for engagement."
+  },
+  {
+    "topic": "The Honey Bee's Dance",
+    "status": "rejected",
+    "reason": "The script includes a call to action asking users to 'Follow' for more, which constitutes commercial promotion and is inappropriate for this age group."
+  },
+  {
+    "topic": "The Chameleon's Color Change",
+    "status": "rejected",
+    "reason": "The script includes a call to action to 'Follow' for more content, which constitutes a commercial-like request for social media engagement, violating the restriction against commercial content."
+  },
+  {
+    "topic": "The Mimic Octopus",
+    "status": "rejected",
+    "reason": "The script includes a call to action ('Follow for a new fun fact every day!'), which constitutes commercial solicitation for social media engagement, violating the child-safety policy regarding commercialism."
+  },
+  {
+    "topic": "The Triangle",
+    "status": "uploaded",
+    "videoId": "y-7h4lWyNlA"
+  },
+  {
+    "topic": "The Snowplow",
+    "status": "uploaded",
+    "videoId": "AQqHzkfnE_I"
+  },
+  {
+    "topic": "The Sun's Solar Flares",
+    "status": "uploaded",
+    "videoId": "bDG9H8lwxAU"
+  },
+  {
+    "topic": "The Kangaroo Joey",
+    "status": "uploaded",
+    "videoId": "xjV1ONDsmJs"
+  },
+  {
+    "topic": "The Ladybug's Red and Black Spots",
+    "status": "uploaded",
+    "videoId": "SqlbfSs9s9A"
+  },
+  {
+    "topic": "The Firefly's Glowing Light",
+    "status": "uploaded",
+    "videoId": "YlEjqFesJNw"
+  },
+  {
+    "topic": "The Squirrel's Nut Stash",
+    "status": "uploaded",
+    "videoId": "ImVybn08Z0c"
+  },
+  {
+    "topic": "The moon's phases",
+    "status": "uploaded",
+    "videoId": "B6i7o-jcFAY"
+  },
+  {
+    "topic": "The Elephant's Water Spray",
+    "status": "uploaded",
+    "videoId": "Ce0b0OrytDI"
+  },
+  {
+    "topic": "The Parrotfish's Sleeping Bubble",
+    "status": "uploaded",
+    "videoId": "3Nnv9q9wn5k"
+  },
+  {
+    "topic": "Counting colorful hot air balloons",
+    "status": "uploaded",
+    "videoId": "q4LP870UMBE"
+  },
+  {
+    "topic": "Counting colorful seashells on a beach",
+    "status": "uploaded",
+    "videoId": "V07bs6XRENk"
+  }
+]

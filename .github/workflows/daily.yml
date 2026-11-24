@@ -1,0 +1,57 @@
+name: Daily video
+
+on:
+  schedule:
+    - cron: "0 15 * * *"   # every day at 15:00 UTC
+  workflow_dispatch:       # lets you start it manually with a button
+
+permissions:
+  contents: write
+
+concurrency:
+  group: video-pipeline
+  cancel-in-progress: false
+
+jobs:
+  make-video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          pip install edge-tts google-api-python-client google-auth
+
+      - name: Make and upload the video
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          MUSIC_DIR: music
+          # ---- settings you can change ----
+          CONTENT_MODE: facts     # facts (general audience, default) or kids (ages 3-7, fixed mascot)
+          LANGUAGE: English
+          VOICE: en-US-AndrewNeural
+          VOICE_RATE: "+6%"
+          PRIVACY: public         # private, unlisted or public
+          SCENE_COUNT: "8"
+          VIDEO_FORMAT: shorts    # shorts (vertical) or landscape
+        run: python main.py
+
+      - name: Save topic history
+        run: |
+          git config user.name "video-bot"
+          git config user.email "video-bot@users.noreply.github.com"
+          git add history.json
+          git diff --cached --quiet || (git commit -m "Update history" && git pull --rebase && git push)
